@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #008000; 
+  color: white; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+header {
+  background-color: #008000; 
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  flex: 1; /* Faz com que o conteúdo principal ocupe o restante do espaço vertical disponível */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}footer {
+  background-color: #008000; 
+  padding: 20px;
+  text-align: center;
+}
+.content {
+  text-align: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 100px; 
+  margin-bottom: 10px;
+  color: #75CD5F;
+  font-family: 'Urbanist' !important;
+}
+
+.description {
+  font-size: 35px;
+  margin-top: 0; 
+    margin-bottom: 20px; 
+}
+
+.cta-button {
+  padding: 20px 40px; /* Maior espaço ao redor do botão */
+  font-size: 20px; /* Tamanho maior para o texto do botão */
+  background-color: white;
+  color: #008000; /* Altera a cor do texto para verde */
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 30px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+.cta-button:hover {
+  background-color: lightgray;
+}
+.logo {
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+}
+
+.logo img {
+  width: 130px; 
+  height: auto; 
+}
+.menu {
+  width: 0;
+  height: 100%;
+  background-color: #0d207385;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  padding: 20px;
+  transition: left 0.5s, width 0.5s;
+  /* Adiciona uma transição para a largura */
+  overflow-y: auto;
+  z-index: 99;
+}
+
+.menu.active {
+  left: 0;
+  width: 250px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background-color: #acc9fc;
+}
+
+
+
+.hamburguer {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 2px 0;
+}
+
+.navbar {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 100;
+}
