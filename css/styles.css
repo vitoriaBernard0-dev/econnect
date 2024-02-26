@@ -20,7 +20,7 @@ main {
   justify-content: center;
   align-items: center;
 }footer {
-  background-color: #008000; 
+  background-color: #215934; 
   padding: 20px;
   text-align: center;
 }
@@ -32,7 +32,7 @@ main {
 .title {
   font-size: 100px; 
   margin-bottom: 10px;
-  color: #75CD5F;
+  color: #abe56b;
   font-family: 'Urbanist' !important;
 }
 
@@ -46,7 +46,7 @@ main {
   padding: 20px 40px; /* Maior espaço ao redor do botão */
   font-size: 20px; /* Tamanho maior para o texto do botão */
   background-color: white;
-  color: #008000; /* Altera a cor do texto para verde */
+  color: #215934; /* Altera a cor do texto para verde */
   border: none;
   cursor: pointer;
   margin-top: 20px;
@@ -73,16 +73,15 @@ main {
   background-color: #0d207385;
   position: fixed;
   top: 0;
-  left: -250px;
+  right: 0; /* Ajustado para o canto direito */
   padding: 20px;
-  transition: left 0.5s, width 0.5s;
-  /* Adiciona uma transição para a largura */
+  transition: right 0.5s, width 0.5s; /* Transição ajustada */
   overflow-y: auto;
   z-index: 99;
 }
 
 .menu.active {
-  left: 0;
+  right: 0; /* Ajustado para abrir para a direita */
   width: 250px;
 }
 
@@ -97,8 +96,6 @@ main {
 .menu a:hover {
   background-color: #acc9fc;
 }
-
-
 
 .hamburguer {
   display: flex;
@@ -118,5 +115,72 @@ main {
   display: flex;
   align-items: center;
   padding: 10px 20px;
+  justify-content: flex-end; /* Ajustado para alinhar o ícone no canto direito */
   z-index: 100;
+}
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #abe56b;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  color: #777;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #56d948;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+}
+
+.btn {
+  background-color: #abe56b;
+  color: #abe56b;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #abe56b;
+}
+
+.mensagem-alerta {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.help-block {
+  color: #75CD5F;
+}
+input {
+  color: #abe56b;
 }
