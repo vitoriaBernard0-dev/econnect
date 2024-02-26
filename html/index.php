@@ -105,33 +105,126 @@ if (isset($_POST['btnSend'])) {
         <div class="content">
             <h2 class="title">ECONNECT</h2>
             <p class="description">"Conectando tecnologia e Sustentabilidade"</p>
-            <button class="cta-button">Saiba Mais</button>
-        </div>
+            <button class="cta-button"><a href="#section2">Saiba Mais</a></button>
+       </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    
+    <div id="section2">
+        <div id="conheca">
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #215934; /* 215934 */
+      color: #fff;
+    }
+    .header {
+      background-color: #008000; /* Cor verde escura */
+      padding: 20px;
+      text-align: center;
+      padding-top: 5%;
+    }
+    .content {
+      text-align: center;
+      padding: 30px;
+    }
+    .button {
+      background-color: #808080; /* Cinza */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+    }
+    .circle-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+    .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 20px;
+      position: relative;
+      text-align: center;
+    }
+    .circle h3, .circle p {
+      margin: 0;
+      padding: 0;
+    }
+    .circle h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      color: white;
+    }
+    .circle p {
+      margin-top: 100px; /* Distância entre o círculo e o texto */
+      font-size: 14px;
+      color: white;
+    }
+    .green {
+      background-color: #ABE56B; /* Verde */
+    }
+    .brown {
+      background-color: #8B4513; /* Marrom */
+    }
+    .blue {
+      background-color: #007bff; /* Azul */
+    }
+    .white {
+      background-color: #ffffff; /* Branco */
+      color: #000;
+    }
+  </style>
+
+
+<div class="header">
+  <h1>Na junção da inovação e respeito ao meio ambiente, nossa iniciativa de coleta de eletrônicos ecoa alto, trazendo consigo a promessa de um futuro mais sustentável</h1>
+  <button class="cta-button"><a href="#section3">Conheça mais</a></button>
+</div>
+
+<div class="content">
+  <h2>O que descartar?</h2>
+  <div class="circle-container">
+    <div class="circle green">
+      <h3>LINHA VERDE</h3>
+      <p>Computadores, tablets, notebooks, celulares, impressoras, monitores, fones de ouvido, entre outros.</p>
+    </div>
+    <div class="circle brown">
+      <h3>LINHA MARROM</h3>
+      <p>Aparelhos de som, TV, equipamentos de DVD/VHS, televisores de tubo, plasma, filmadores, etc.</p>
+    </div>
+    <div class="circle blue">
+      <h3>LINHA AZUL</h3>
+      <p>Torradeiras, batedeiras, aspiradores de pó, ventiladores, mixers, secadores de cabelo, ferramentas elétricas, calculadoras, rádios, etc.</p>
+    </div>
+    <div class="circle white">
+      <h3>LINHA BRANCA</h3>
+      <p>Geladeiras, freezers, máquinas de lavar, fogões, ar condicionados, microondas, etc.</p>
+    </div>
+  </div>
+</div>
+<div id="section3">
+        <div class="content">
+            <h5 class="pq">Porque descartar corretamente?</h5>
+            <p class="descricao">Conheça nossos programas de
+                 recompensas para usuários que descartam eletrônicos regularmente</p>
+            <button class="cta-button"><a href="#section4">Mais Detalhes</a></button>
+        </div>
     <div id="container">
         <div class="faleconosco">
             <form class="form-horizontal" action="index.php#formulario" method="post" role="form" data-toggle="validator">
-            <h1>Formulário de Contato</h1>
+                <h1>Formulário de Contato</h1>
                 <div class="form-group">
                     <label class="control-label col-sm-3">Nome*:</label>
                     <div class="col-sm-9">
@@ -182,9 +275,9 @@ if (isset($_POST['btnSend'])) {
                     </div>
                 </div>
                 <a href="#section1">aperta</a>
-        </div>
             </form>
         </div>
+    </div>
     <footer>
         <p>Meu Rodapé</p>
     </footer>

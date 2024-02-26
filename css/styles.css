@@ -35,11 +35,23 @@ main {
   color: #abe56b;
   font-family: 'Urbanist' !important;
 }
-
+.pq{
+  font-size: 70px; 
+  margin-bottom: 10px;
+  color: #abe56b;
+  font-family: 'Urbanist' !important;
+}
+.descricao{
+  font-size: 25px;
+  margin-top: 0; 
+  margin-bottom: 20px; 
+  color: white;
+}
 .description {
   font-size: 35px;
   margin-top: 0; 
     margin-bottom: 20px; 
+    color:white;
 }
 
 .cta-button {
@@ -53,6 +65,23 @@ main {
   border-radius: 30px; /* Bordas arredondadas */
   transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
 }
+
+.cta-button:hover{
+  transform: scale(0.9);
+}
+
+#section1{
+  height: 100vh;
+}
+
+#section2{
+  height: 100vh;
+}
+
+#section3{
+  height: 100%;
+}
+
 
 .cta-button:hover {
   background-color: lightgray;
@@ -177,7 +206,14 @@ textarea {
   text-align: center;
   margin-top: 20px;
 }
+a{
+  text-decoration: none;
+  color: black;
 
+}
+p{
+  font-size: 10px;
+}
 .help-block {
   color: #75CD5F;
 }
