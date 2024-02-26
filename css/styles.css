@@ -113,7 +113,17 @@ main {
     margin-bottom: 20px; 
     color:white;
 }
-
+.con{
+  padding: 20px 40px; /* Maior espaço ao redor do botão */
+  font-size: 20px; /* Tamanho maior para o texto do botão */
+  background-color: #D3D3D3;
+  color: #215934; /* Altera a cor do texto para verde */
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 30px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
 .cta-button {
   padding: 20px 40px; /* Maior espaço ao redor do botão */
   font-size: 20px; /* Tamanho maior para o texto do botão */
@@ -139,6 +149,9 @@ main {
 }
 
 #section3{
+  height: 100vh;
+}
+#section4{
   height: 100vh;
 }
 

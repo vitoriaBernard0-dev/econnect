@@ -119,8 +119,8 @@ if (isset($_POST['btnSend'])) {
       background-color: #215934; /* 215934 */
       color: #fff;
     }
-    .header {
-      background-color: #008000; /* Cor verde escura */
+    .meio {
+      background-color: white; /* Cor verde escura */
       padding: 20px;
       text-align: center;
       padding-top: 5%;
@@ -165,7 +165,7 @@ if (isset($_POST['btnSend'])) {
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 16px;
-      color: white;
+      color: #808080;
     }
     .circle p {
       margin-top: 100px; /* Distância entre o círculo e o texto */
@@ -188,9 +188,9 @@ if (isset($_POST['btnSend'])) {
   </style>
 
 
-<div class="header">
+<div class="meio">
   <h1>Na junção da inovação e respeito ao meio ambiente, nossa iniciativa de coleta de eletrônicos ecoa alto, trazendo consigo a promessa de um futuro mais sustentável</h1>
-  <button class="cta-button"><a href="#section3">Conheça mais</a></button>
+  <button class="con"><a href="#section3">Conheça mais</a></button>
 </div>
 
 <div class="content">
@@ -214,13 +214,48 @@ if (isset($_POST['btnSend'])) {
     </div>
   </div>
 </div>
+<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
 <div id="section3">
         <div class="content">
             <h5 class="pq">Porque descartar corretamente?</h5>
             <p class="descricao">Conheça nossos programas de
                  recompensas para usuários que descartam eletrônicos regularmente</p>
-            <button class="cta-button"><a href="#section4">Mais Detalhes</a></button>
+            <button class="cta-button"><a href="#section4">Fale Conosco</a></button>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <div id="section4">
     <div id="container">
         <div class="faleconosco">
             <form class="form-horizontal" action="index.php#formulario" method="post" role="form" data-toggle="validator">
@@ -271,16 +306,99 @@ if (isset($_POST['btnSend'])) {
                     <div class="col-md-12 text-right">
                         <input class = "btn btn-primary" id="submit" name="btnSend" type="submit" value="ENVIAR">
                         <a name="formulario"></a>
-                        <div class="mensagem-alerta"><?php echo $msg ?></div>
+                        <button class="cta-button"><a href="#section1">Enviar</a></button>
                     </div>
                 </div>
-                <a href="#section1">aperta</a>
+                <button class="cta-button"><a href="#section5">Sobre nós</a></button>
+                <button class="cta-button"><a href="#section1">Voltar</a></button>
+
             </form>
         </div>
     </div>
-    <footer>
-        <p>Meu Rodapé</p>
-    </footer>
+</div>
+<style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #215934;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+        h1 {
+            color: #ABE56B;
+            text-align: center;
+        }
+
+        h2 {
+            color: #215934;
+        }
+
+        p {
+            color: black;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+.section {
+            background-color: #d4edda;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .mission,
+        .vision,
+        .values {
+            margin-bottom: 20px;
+        }
+
+        .values ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .values li {
+            padding-left: 20px;
+            margin-bottom: 10px;
+            position: relative;
+            color: black;
+        }
+
+        .values li:before {
+            content: "\2022";
+            color: #215934;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+            <div id="section5">
+    <div class="container">
+        <h1>Sobre Nós</h1>
+        <div class="section mission">
+            <h2>Missão:</h2>
+            <p>Inovação para Soluções - Oferecer produtos tecnológicos inovadores e sob medida, visando proporcionar soluções eficazes.</p>
+        </div>
+        <div class="section vision">
+            <h2>Visão:</h2>
+            <p>Tornar-se líder global em oferecer soluções tecnológicas inovadoras e acessíveis para resolver os desafios contemporâneos.</p>
+        </div>
+        <div class="section values">
+            <h2>Valores:</h2>
+            <ul>
+                <li><strong>INOVAÇÃO:</strong> Buscamos constantemente novas formas de abordar problemas, adotando tecnologias emergentes e métodos criativos.</li>
+                <li><strong>CONFIANÇA:</strong> Comprometemo-nos com a transparência e a integridade em todas as interações com clientes, parceiros e colaboradores.</li>
+                <li><strong>EMPATIA:</strong> Compreendemos as necessidades dos clientes e desenvolvemos soluções que realmente fazem a diferença em suas vidas e negócios.</li>
+                <li><strong>SUSTENTABILIDADE:</strong> Priorizamos a implementação de práticas sustentáveis em nossas operações e produtos, visando um impacto positivo no meio ambiente.</li>
+            </ul>
+        </div>
+    </div>
+        </div>
 
     <script>
         function toggleMenu() {
