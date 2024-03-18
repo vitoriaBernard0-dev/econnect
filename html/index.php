@@ -208,6 +208,12 @@ $conn->close();
             <h5 class="pq">Porque descartar corretamente?</h5>
             <p class="descricao">Conheça nossos programas de
                  recompensas para usuários que descartam eletrônicos regularmente</p>
+
+                 <div class="figma">
+            <a href=""><img src="../img/figma.png" alt=""></a>
+             </div>
+
+
             <button class="cta-button"><a href="#section4">Fale Conosco</a></button>
         </div>
         <br>
