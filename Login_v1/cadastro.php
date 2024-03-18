@@ -3,7 +3,7 @@
 $servername = "localhost"; // Altere para o nome do seu servidor, se necessário
 $username = "root"; // Altere para o seu nome de usuário do banco de dados
 $password = ""; // Altere para a sua senha do banco de dados
-$dbname = "logineco"; // Nome do banco de dados
+$dbname = "loginecoo"; // Nome do banco de dados
 
 // Criando a conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if ($conn->query($sql) === TRUE) {
         // Redirecionar para a página de login após o cadastro
-        header("Location: index.php");
+        header("Location: login.php");
         exit();
     } else {
         // Exibir mensagem de erro caso ocorra um problema ao inserir os dados

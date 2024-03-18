@@ -1,3 +1,4 @@
+
 <?php
 // Conexão com o banco de dados
 $servername = "localhost"; // endereço do servidor MySQL (geralmente localhost)

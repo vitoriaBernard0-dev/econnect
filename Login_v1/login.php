@@ -1,40 +1,55 @@
 <?php
-// Conexão com o banco de dados
 $servername = "localhost"; // Altere para o nome do seu servidor, se necessário
 $username = "root"; // Altere para o seu nome de usuário do banco de dados
 $password = ""; // Altere para a sua senha do banco de dados
-$dbname = "logineco"; // Nome do banco de dados
+$dbname = "loginecoo"; // Nome do banco de dados
 
 // Criando a conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
+$mysqli = new mysqli($servername, $username, $password, $dbname);
 
 // Verificando a conexão
-if ($conn->connect_error) {
-    die("Erro na conexão: " . $conn->connect_error);
+if ($mysqli->connect_error) {
+    die("Erro na conexão: " . $mysqli->connect_error);
 }
-
-// Inicializando a variável de controle da mensagem de erro
-$display_error_message = false;
-
-// Verificar se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // Processar os dados do formulário
-    $email = $_POST['email'];
-    $password = $_POST['pass'];
+    $email = $mysqli->real_escape_string($_POST['email']);
+    $senha = $mysqli->real_escape_string($_POST['senha']);
 
-    // Consulta ao banco de dados para verificar as credenciais
-    $sql = "SELECT * FROM usuarios WHERE email='$email' AND senha='$password'";
-    $result = $conn->query($sql);
+    $sql_code = "SELECT * FROM usuarios WHERE email = '$email'";
+    $sql_query = $mysqli->query($sql_code);
 
-    if ($result->num_rows > 0) {
-        // Usuário autenticado com sucesso
-        echo "<script>alert('Usuário autenticado com sucesso!');</script>";
+    if ($sql_query->num_rows >= 1) {
+        $linha = $sql_query->fetch_assoc();
+        $senha_hash = $linha['senha'];
+
+        if (password_verify($senha, $senha_hash)) {
+            // Senha correta
+
+            session_start();
+            $_SESSION['user'] = $linha['id'];
+
+            header("location: ../html/index.php");
+            exit();
+        } else {
+            // Senha incorreta
+            echo '<script>alert("Senha Incorreta Inserida!");</script>';
+            echo '<script>
+                setTimeout(function(){
+                    window.location.href = "login.php";
+                }, 1000); // Redireciona após 1 segundo
+              </script>';
+        }
     } else {
-        // Usuário ou senha incorretos
-        $display_error_message = true;
+        echo '<script>alert("Usuario Não Encontrado!");</script>';
+        echo '<script>
+            setTimeout(function(){
+                window.location.href = "login.php";
+            }, 1000); // Redireciona após 1 segundo
+          </script>';
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -86,14 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <span class="symbol-input100">
                         <i class="fa fa-lock" aria-hidden="true"></i>
                     </span>
-                </div>
-
-                <!-- Exibição da mensagem de erro -->
-                <?php if ($display_error_message) { ?>
-                    <div class="wrap-input100" style="color: #c80000;">
-                        Usuário ou senha incorretos.
                     </div>
-                <?php } ?>
 
                 <div class="container-login100-form-btn">
                     <button type="submit" class="login100-form-btn">Login</button>
