@@ -1,39 +1,39 @@
-
 <?php
-// Conexão com o banco de dados
-$servername = "localhost"; // endereço do servidor MySQL (geralmente localhost)
-$username = "root"; // nome de usuário do banco de dados
-$password = ""; // senha do banco de dados
-$dbname = "loginecoo"; // nome do banco de dados
-$table = "formulario_contato"; // nome da tabela
+// Verifica se os dados foram submetidos via método POST
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Recebe os dados do formulário
+    $nome = isset($_POST['nome']) ? $_POST['nome'] : '';
+    $email = isset($_POST['email']) ? $_POST['email'] : '';
+    $telefone = isset($_POST['telefone']) ? $_POST['telefone'] : '';
+    $assunto = isset($_POST['assunto']) ? $_POST['assunto'] : '';
+    $mensagem = isset($_POST['mensagem']) ? $_POST['mensagem'] : '';
 
-// Conexão com o banco de dados
-$conn = new mysqli($servername, $username, $password, $dbname);
+    // Conexão com o banco de dados
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "loginecoo";
+    $table = "formulario_contato";
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verifica a conexão
-if ($conn->connect_error) {
-    die("Falha na conexão com o banco de dados: " . $conn->connect_error);
+    // Verifica a conexão
+    if ($conn->connect_error) {
+        die("Falha na conexão com o banco de dados: " . $conn->connect_error);
+    }
+
+    // Prepara e executa a query SQL para inserir os dados no banco de dados
+    $sql = "INSERT INTO $table (nome, email, telefone, assunto, mensagem)
+    VALUES ('$nome', '$email', '$telefone', '$assunto', '$mensagem')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Dados inseridos com sucesso!";
+    } else {
+        echo "Erro: " . $sql . "<br>" . $conn->error;
+    }
+
+    $conn->close();
 }
-
-// Recebe os dados do formulário
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$telefone = $_POST['telefone'];
-$assunto = $_POST['assunto'];
-$mensagem = $_POST['mensagem'];
-
-// Prepara e executa a query SQL para inserir os dados no banco de dados
-$sql = "INSERT INTO $table (nome, email, telefone, assunto, mensagem)
-VALUES ('$nome', '$email', '$telefone', '$assunto', '$mensagem')";
-
-if ($conn->query($sql) === TRUE) {
-    echo "Dados inseridos com sucesso!";
-} else {
-    echo "Erro: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
-?>  
+?> 
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -240,7 +240,7 @@ $conn->close();
         <div id="section4">
     <div id="container">
         <div class="faleconosco">
-            <form class="form-horizontal" action="processa_formulario.php" method="post" role="form" data-toggle="validator">
+            <form class="form-horizontal" method="post" role="form" data-toggle="validator">
                 <h1>Formulário de Contato</h1>
                 <div class="form-group">
                     <label class="control-label col-sm-3">Nome*:</label>
