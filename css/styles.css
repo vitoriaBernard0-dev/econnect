@@ -25,7 +25,7 @@ main {
   text-align: center;
 }
 .content {
-  text-align: center;
+  align-items: center;
   padding: 30px;
 }
 .button {
@@ -83,10 +83,6 @@ main {
 .white {
   background-color: #ffffff; /* Branco */
   color: #000;
-}
-.content {
-  text-align: center;
-  align-items: center;
 }
 
 .title {
