@@ -96,9 +96,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <div class="content">
   <h2>O que descartar?</h2>
-  <div class="linha">
-            <a class="lixos" href=""><img src="../img/linha.png" alt=""></a>
-             </div>
+  <div class="circle-container">
+    <div class="circle green">
+      <h3>LINHA VERDE</h3>
+      <p>Computadores, tablets, notebooks, celulares, impressoras, monitores, fones de ouvido, entre outros.</p>
+    </div>
+    <div class="circle brown">
+      <h3>LINHA MARROM</h3>
+      <p>Aparelhos de som, TV, equipamentos de DVD/VHS, televisores de tubo, plasma, filmadores, etc.</p>
+    </div>
+    <div class="circle blue">
+      <h3>LINHA AZUL</h3>
+      <p>Torradeiras, batedeiras, aspiradores de pó, ventiladores, mixers, secadores de cabelo, ferramentas elétricas, calculadoras, rádios, etc.</p>
+    </div>
+    <div class="circle white">
+      <h3>LINHA BRANCA</h3>
+      <p>Geladeiras, freezers, máquinas de lavar, fogões, ar condicionados, microondas, etc.</p>
+    </div>
+  </div>
+</div>
 <br>
         <br>
         <br>
@@ -149,35 +165,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="section4">
     <div id="container">
         <div class="faleconosco">
-        <h1>Formulário de Contato</h1>
             <form class="form-horizontal" method="post" role="form" data-toggle="validator">
+                <h1>Formulário de Contato</h1>
                 <div class="form-group">
-                    <label class="control-label col-sm-3">Nome:</label>
+                    <label class="control-label col-sm-3">Nome*:</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" name="nome" id="nome" value="" placeholder="Digite seu nome" required >
+                        <input type="text" class="form-control" name="nome" id="nome" value="" placeholder="seu nome" required >
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-3">Email:</label>
+                    <label class="control-label col-sm-3">Email*:</label>
                     <div class="col-sm-9">
                         <input type="email" class="form-control" name="email" id="email" value="" placeholder="exemplo@dominio.com" required>
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-3">Telefone:</label>
+                    <label class="control-label col-sm-3">Telefone*:</label>
                     <div class="col-sm-9">
                         <input type="number" class="form-control" name="telefone" id="telefone" placeholder="(00) 00000-0000" required>
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-3">Assunto:</label>
-                    <option value="" selected="selected" disabled="disabled">Escolha uma opção</option>
+                    <label class="control-label col-sm-3">Assunto*:</label>
                     <div class="col-sm-9">
                         <select class="form-control" name="assunto" required>
-                            <option value="contato">Assunto</option>
+                            <option value="" selected="selected" disabled="disabled"> -- Escolha uma opção --</option>
                             <option value="contato">Contato</option>
                             <option value="vendas">Vendas</option>
                             <option value="financeiro">Financerio</option>
@@ -187,10 +202,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-3">Mensagem:</label>
+                    <label class="control-label col-sm-3">Mensagem*:</label>
                     <div class="col-sm-9">
                         <textarea class="form-control" id="exampleTextarea" rows="6" 
-                                  id="mensagem" name="mensagem" placeholder="Digite uma mensagem" required></textarea>
+                                  id="mensagem" name="mensagem" placeholder="sua mensagem" required></textarea>
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
@@ -201,10 +216,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <!-- <button class="cta-button"><a href="#section1">Enviar</a></button> -->
                     </div>
                 </div>
-               
+                <button class="cta-button"><a href="#section5">Sobre nós</a></button>
+                <button class="cta-button"><a href="#section1">Voltar</a></button>
 
             </form>
-            <button class="cta-button"><a href="#section5">Sobre nós</a></button>
         </div>
     </div>
 </div>
@@ -252,8 +267,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div class="integrantes">
     <a href=""><img src="../img/c.png" alt=""></a>
     <a href=""><img src="../img/bru.png" alt=""></a>
-    <a href=""><img src="../img/viv.png" alt=""></a>
     <a href=""><img src="../img/k.png" alt=""></a>
+    <a href=""><img src="../img/viv.png" alt=""></a>
 </div>
 
 
