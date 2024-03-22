@@ -1,4 +1,136 @@
 body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #215934;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+h1 {
+  color: #ABE56B;
+  text-align: center;
+}
+
+h2 {
+  color: #215934;
+}
+
+p {
+  color: black;
+  line-height: 1.6;
+  font-size: 18px;
+}
+.section {
+  background-color: #d4edda;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.mission,
+.vision,
+.values {
+  margin-bottom: 20px;
+}
+
+.values ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.values li {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  color: black;
+}
+
+.values li:before {
+  content: "\2022";
+  color: #215934;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #215934; /* 215934 */
+  color: #fff;
+}
+.meio {
+  background-color: white; /* Cor verde escura */
+  padding: 20px;
+  text-align: center;
+  padding-top: 5%;
+}
+.content {
+  text-align: center;
+  padding: 30px;
+}
+.button {
+  background-color: #808080; /* Cinza */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.circle-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px;
+  position: relative;
+  text-align: center;
+}
+.circle h3, .circle p {
+  margin: 0;
+  padding: 0;
+}
+.circle h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #808080;
+}
+.circle p {
+  margin-top: 100px; /* Distância entre o círculo e o texto */
+  font-size: 14px;
+  color: white;
+}
+.green {
+  background-color: #ABE56B; /* Verde */
+}
+.brown {
+  background-color: #8B4513; /* Marrom */
+}
+.blue {
+  background-color: #007bff; /* Azul */
+}
+.white {
+  background-color: #ffffff; /* Branco */
+  color: #000;
+}
+body {
   margin: 0;
   padding: 0;
   background-color: #215934; 
