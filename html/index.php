@@ -224,9 +224,56 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 </div>
 
-            <div id="section5">
-    <div class="container">
-        <h1>Sobre Nós</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre Nós</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .integrantes {
+        display: flex;
+        justify-content: center; /* Para centralizar as imagens horizontalmente */
+        align-items: center; /* Para alinhar as imagens verticalmente */
+    }
+
+    .integrantes a {
+        display: inline-block;
+        margin: 0 10px; /* Espaçamento entre as imagens */
+        width: 100px; /* Largura da bola */
+        height: 100px; /* Altura da bola */
+        border-radius: 50%; /* Transforma a bola em um círculo */
+        overflow: hidden; /* Para esconder partes da imagem fora da bola */
+        background-color: #ABE56B; /* Cor da bola */
+    }
+
+    .integrantes img {
+        width: 100%; /* Ajusta a largura da imagem para preencher a bola */
+        height: auto; /* Mantém a proporção da imagem */
+        display: block; /* Remove espaços em branco extras abaixo da imagem */
+    }
+</style>
+</head>
+<body>
+
+<h1>Sobre Nós</h1>
+<div class="integrantes">
+    <a href=""><img src="../img/c.png" alt=""></a>
+    <a href=""><img src="../img/bru.png" alt=""></a>
+    <a href=""><img src="../img/viv.png" alt=""></a>
+    <a href=""><img src="../img/k.png" alt=""></a>
+</div>
+
+
+
+             
         <div class="section mission">
             <h2>Missão:</h2>
             <p>Inovação para Soluções - Oferecer produtos tecnológicos inovadores e sob medida, visando proporcionar soluções eficazes.</p>
@@ -245,7 +292,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </ul>
         </div>
     </div>
-        </div>
+</div>
+
+</body>
+</html>
 
     <script>
         function toggleMenu() {
