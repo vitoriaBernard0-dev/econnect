@@ -87,82 +87,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     <div id="section2">
         <div id="conheca">
-    <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #215934; /* 215934 */
-      color: #fff;
-    }
-    .meio {
-      background-color: white; /* Cor verde escura */
-      padding: 20px;
-      text-align: center;
-      padding-top: 5%;
-    }
-    .content {
-      text-align: center;
-      padding: 30px;
-    }
-    .button {
-      background-color: #808080; /* Cinza */
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 12px;
-    }
-    .circle-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-end;
-    }
-    .circle {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin: 20px;
-      position: relative;
-      text-align: center;
-    }
-    .circle h3, .circle p {
-      margin: 0;
-      padding: 0;
-    }
-    .circle h3 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 16px;
-      color: #808080;
-    }
-    .circle p {
-      margin-top: 100px; /* Distância entre o círculo e o texto */
-      font-size: 14px;
-      color: white;
-    }
-    .green {
-      background-color: #ABE56B; /* Verde */
-    }
-    .brown {
-      background-color: #8B4513; /* Marrom */
-    }
-    .blue {
-      background-color: #007bff; /* Azul */
-    }
-    .white {
-      background-color: #ffffff; /* Branco */
-      color: #000;
-    }
-  </style>
-
+    
+     
 
 <div class="meio">
   <h1>Na junção da inovação e respeito ao meio ambiente, nossa iniciativa de coleta de eletrônicos ecoa alto, trazendo consigo a promessa de um futuro mais sustentável</h1>
