@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Verde</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- <script src="../js/main.js"></script> -->
+    <!-- <script src="../js/main.js"></script> -->
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href=""><img src="../img/logoeconnect.png" alt=""></a>
+        </div>
+
+        <div class="menu" class="menu">
+            <a href="index.php">Home</a>
+            <a href="indexiphone.php">Apple</a>
+            <a href="indexxaiomi.php">Xiaomi</a>
+            <a href="indexmotorola.php">Motorola</a>
+            <a href="indexsamsung.php">Samsung</a>
+        </div>
+        <div class="navbar">
+            <div class="hamburguer" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2 class="title">ECONNECT</h2>
+            <p class="description">"Conectando tecnologia e Sustentabilidade" </p>
+            <button class="cta-button">Saiba Mais</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Meu Rodapé</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector( '.menu' );
+            menu.classList.toggle("active");
+          }        
+    </script>
+</body>
+
+</html>
