@@ -395,6 +395,21 @@ p {
   padding: 20px;
   margin-bottom: 30px;
 }
+.linha {
+  text-align: center; /* Centraliza o conteúdo dentro da div */
+}
+
+/* Estilos para a classe lixos */
+.lixos {
+  display: inline-block; /* Faz com que o elemento se comporte como um bloco, mas mantenha-se em linha com outros elementos */
+  margin: 10px; /* Adiciona margem ao redor do elemento */
+}
+
+/* Estilos para a imagem dentro da classe lixos */
+.lixos img {
+  width: 1000px; /* Define a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+}
 
 .mission,
 .vision,
