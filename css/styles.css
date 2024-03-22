@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #008000; 
+  background-color: #215934; 
   color: white; 
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-color: #008000; 
+  background-color: #215934; 
   padding: 20px;
   text-align: center;
 }
@@ -20,39 +20,137 @@ main {
   justify-content: center;
   align-items: center;
 }footer {
-  background-color: #008000; 
+  background-color: #215934; 
   padding: 20px;
   text-align: center;
 }
 .content {
-  text-align: center;
   align-items: center;
+  padding: 30px;
+}
+.button {
+  background-color: #808080; /* Cinza */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.circle-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px;
+  position: relative;
+  text-align: center;
+}
+.circle h3, .circle p {
+  margin: 0;
+  padding: 0;
+}
+.circle h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: white;
+}
+.circle p {
+  margin-top: 100px; /* Distância entre o círculo e o texto */
+  font-size: 14px;
+  color: white;
+}
+.green {
+  background-color: #ABE56B; /* Verde */
+}
+.brown {
+  background-color: #8B4513; /* Marrom */
+}
+.blue {
+  background-color: #007bff; /* Azul */
+}
+.white {
+  background-color: #ffffff; /* Branco */
+  color: #000;
 }
 
 .title {
   font-size: 100px; 
   margin-bottom: 10px;
-  color: #75CD5F;
+  color: #abe56b;
   font-family: 'Urbanist' !important;
 }
-
+.pq{
+  font-size: 70px; 
+  margin-bottom: 10px;
+  color: #abe56b;
+  font-family: 'Urbanist' !important;
+}
+.descricao{
+  font-size: 25px;
+  margin-top: 0; 
+  margin-bottom: 20px; 
+  color: white;
+}
 .description {
   font-size: 35px;
   margin-top: 0; 
     margin-bottom: 20px; 
+    color:white;
 }
-
-.cta-button {
+.con{
   padding: 20px 40px; /* Maior espaço ao redor do botão */
   font-size: 20px; /* Tamanho maior para o texto do botão */
-  background-color: white;
-  color: #008000; /* Altera a cor do texto para verde */
+  background-color: #D3D3D3;
+  color: #215934; /* Altera a cor do texto para verde */
   border: none;
   cursor: pointer;
   margin-top: 20px;
   border-radius: 30px; /* Bordas arredondadas */
   transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
 }
+.cta-button {
+  padding: 20px 40px; /* Maior espaço ao redor do botão */
+  font-size: 20px; /* Tamanho maior para o texto do botão */
+  background-color: white;
+  color: #215934; /* Altera a cor do texto para verde */
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 30px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+.cta-button:hover{
+  transform: scale(0.9);
+}
+
+#section1{
+  height: 100vh;
+}
+
+#section2{
+  height: 100vh;
+}
+
+#section3{
+  height: 100vh;
+}
+#section4{
+  height: 100vh;
+}
+
 
 .cta-button:hover {
   background-color: lightgray;
@@ -73,16 +171,15 @@ main {
   background-color: #0d207385;
   position: fixed;
   top: 0;
-  left: -250px;
+  right: 0; /* Ajustado para o canto direito */
   padding: 20px;
-  transition: left 0.5s, width 0.5s;
-  /* Adiciona uma transição para a largura */
+  transition: right 0.5s, width 0.5s; /* Transição ajustada */
   overflow-y: auto;
   z-index: 99;
 }
 
 .menu.active {
-  left: 0;
+  right: 0; /* Ajustado para abrir para a direita */
   width: 250px;
 }
 
@@ -97,8 +194,6 @@ main {
 .menu a:hover {
   background-color: #acc9fc;
 }
-
-
 
 .hamburguer {
   display: flex;
@@ -118,5 +213,79 @@ main {
   display: flex;
   align-items: center;
   padding: 10px 20px;
+  justify-content: flex-end; /* Ajustado para alinhar o ícone no canto direito */
   z-index: 100;
+}
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #abe56b;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  color: #777;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #56d948;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+}
+
+.btn {
+  background-color: #abe56b;
+  color: #abe56b;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #abe56b;
+}
+
+.mensagem-alerta {
+  text-align: center;
+  margin-top: 20px;
+}
+a{
+  text-decoration: none;
+  color: black;
+
+}
+p{
+  font-size: 10px;
+}
+.help-block {
+  color: #75CD5F;
+}
+input {
+  color: #abe56b;
 }
