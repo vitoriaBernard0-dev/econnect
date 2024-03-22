@@ -196,9 +196,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <div class="form-group">
                     <div class="col-md-12 text-right">
-                        <input class = "btn btn-primary" id="submit" name="btnSend" type="submit" value="ENVIAR">
+                        <input class = "cta-button" id="submit" name="btnSend" type="submit" value="Enviar">
                         <a name="formulario"></a>
-                        <button class="cta-button"><a href="#section1">Enviar</a></button>
+                        <!-- <button class="cta-button"><a href="#section1">Enviar</a></button> -->
                     </div>
                 </div>
                
