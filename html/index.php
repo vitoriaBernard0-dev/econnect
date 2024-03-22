@@ -298,6 +298,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
 </div>
+<style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #215934;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+        h1 {
+            color: #ABE56B;
+            text-align: center;
+        }
+
+        h2 {
+            color: #215934;
+        }
+
+        p {
+            color: black;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+.section {
+            background-color: #d4edda;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .mission,
+        .vision,
+        .values {
+            margin-bottom: 20px;
  
             <div id="section5">
     <div class="container">
