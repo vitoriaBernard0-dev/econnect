@@ -9,7 +9,8 @@ body {
   color: white; 
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
 header {
@@ -155,7 +156,6 @@ main {
   height: 100vh;
 }
 
-
 .cta-button:hover {
   background-color: lightgray;
 }
@@ -293,13 +293,6 @@ p{
 input {
   color: #abe56b;
 }
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #215934; /* 215934 */
-  color: #fff;
-}
 .meio {
   background-color: white; /* Cor verde escura */
   padding: 20px;
@@ -365,12 +358,6 @@ body {
 .white {
   background-color: #ffffff; /* Branco */
   color: #000;
-}
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #215934;
 }
 
 .container {
@@ -439,4 +426,25 @@ p {
   font-weight: bold;
   position: absolute;
   left: 0;
+}
+.integrantes {
+  display: flex;
+  justify-content: center; /* Para centralizar as imagens horizontalmente */
+  align-items: center; /* Para alinhar as imagens verticalmente */
+}
+
+.integrantes a {
+  display: inline-block;
+  margin: 0 10px; /* Espaçamento entre as imagens */
+  width: 100px; /* Largura da bola */
+  height: 100px; /* Altura da bola */
+  border-radius: 50%; /* Transforma a bola em um círculo */
+  overflow: hidden; /* Para esconder partes da imagem fora da bola */
+  background-color: #ABE56B; /* Cor da bola */
+}
+
+.integrantes img {
+  width: 100%; /* Ajusta a largura da imagem para preencher a bola */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaços em branco extras abaixo da imagem */
 }
