@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     VALUES ('$nome', '$email', '$telefone', '$assunto', '$mensagem')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Dados inseridos com sucesso!";
+        echo "<script>alert('Formulário enviado com Sucesso!');</script>";
     } else {
         echo "Erro: " . $sql . "<br>" . $conn->error;
     }
@@ -103,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     <div id="section3">
-        <div class="content">
+        <div class="content1">
             <h5 class="pq">Porque descartar corretamente?</h5>
             <p class="descricao">Conheça nossos programas de
                 recompensas para usuários que descartam eletrônicos regularmente</p>
@@ -173,10 +173,83 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </div>
                     </div>
 
-
                 </form>
-                <button class="cta-button"><a href="#section5">Sobre nós</a></button>
+
+                <div id="div-btn-sobrenos">
+                    <button class="sobreb"><a href="#section5">Sobre nós</a></button>
+                </div>
+
             </div>
+        </div>
+    </div>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        #section5 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .section {
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+            background-color: #abe56b;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p,
+        ul {
+            color: #666;
+            font-family: 'Tahoma', sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+
+
+    <div id="section5">
+        <h1>Sobre Nós</h1>
+        <div class="section mission">
+            <h2>Missão:</h2>
+            <p>Inovação para Soluções - Oferecer produtos tecnológicos inovadores e sob medida, visando proporcionar soluções eficazes.</p>
+        </div>
+        <div class="section vision">
+            <h2>Visão:</h2>
+            <p>Tornar-se líder global em oferecer soluções tecnológicas inovadoras e acessíveis para resolver os desafios contemporâneos.</p>
+        </div>
+        <div class="section values">
+            <h2>Valores:</h2>
+            <ul>
+                <li><strong>INOVAÇÃO:</strong></li>
+                <li><strong>CONFIANÇA:</strong></li>
+                <li><strong>EMPATIA:</strong></li>
+                <li><strong>SUSTENTABILIDADE:</strong></li>
+            </ul>
         </div>
     </div>
 
