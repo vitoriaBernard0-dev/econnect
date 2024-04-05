@@ -182,6 +182,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -252,6 +253,50 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </ul>
         </div>
     </div>
+=======
+    <div id="section5">
+    <div class="section about-us">
+    <h1>Sobre Nós</h1>
+    <div class="integrantes">
+        <div class="integrante">
+            <a href=""><img src="../img/c.png" alt=""></a>
+            <p>Nome: C</p>
+        </div>
+        <div class="integrante">
+            <a href=""><img src="../img/bru.png" alt=""></a>
+            <p>Nome: Bru</p>
+        </div>
+        <div class="integrante">
+            <a href=""><img src="../img/viv.png" alt=""></a>
+            <p>Nome: Viv</p>
+        </div>
+        <div class="integrante">
+            <a href=""><img src="../img/k.png" alt=""></a>
+            <p>Nome: K</p>
+        </div>
+    </div>
+
+    <div class="section mission">
+        <h2>Missão:</h2>
+        <p>Inovação para Soluções - Oferecer produtos tecnológicos inovadores e sob medida, visando proporcionar soluções eficazes.</p>
+    </div>
+    <div class="section vision">
+        <h2>Visão:</h2>
+        <p>Tornar-se líder global em oferecer soluções tecnológicas inovadoras e acessíveis para resolver os desafios contemporâneos.</p>
+    </div>
+    <div class="section values">
+        <h2>Valores:</h2>
+        <ul>
+            <li><strong>INOVAÇÃO:</strong> Buscamos constantemente novas formas de abordar problemas, adotando tecnologias emergentes e métodos criativos.</li>
+            <li><strong>CONFIANÇA:</strong> Comprometemo-nos com a transparência e a integridade em todas as interações com clientes, parceiros e colaboradores.</li>
+            <li><strong>EMPATIA:</strong> Compreendemos as necessidades dos clientes e desenvolvemos soluções que realmente fazem a diferença em suas vidas e negócios.</li>
+            <li><strong>SUSTENTABILIDADE:</strong> Priorizamos a implementação de práticas sustentáveis em nossas operações e produtos, visando um impacto positivo no meio ambiente.</li>
+        </ul>
+    </div>
+</div>
+
+    </div>
+>>>>>>> 40bdbd86246b0a0a251b9ee1272b2e41a0c62098
 
 </body>
 
