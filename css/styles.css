@@ -252,6 +252,7 @@ form {
 h1 {
   text-align: center;
   color: #333;
+  text-align: justify;
 }
 
 p {
@@ -393,6 +394,7 @@ input {
 h1 {
   color: #ABE56B;
   text-align: center;
+  text-align: justify;
 }
 
 h2 {
@@ -467,3 +469,113 @@ p {
   height: auto; /* Mantém a proporção da imagem */
   display: block; /* Remove espaços em branco extras abaixo da imagem */
 }
+/* Estilos para telas menores */
+@media only screen and (max-width: 960px) {
+  /* Estilização específica para telas menores */
+  #section1 {
+    text-align: center;
+    padding: 50px 10px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 65px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    padding: 20px 40px; /* Maior espaço ao redor do botão */
+    font-size: 20px; /* Tamanho maior para o texto do botão */
+    background-color: white;
+    color: #215934; /* Altera a cor do texto para verde */
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 30px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+  }
+  
+  .cta-button:hover{
+    transform: scale(0.9);
+  }
+}
+/* Estilos para telas menores */
+@media only screen and (max-width: 960px) {
+  /* Estilização específica para telas menores */
+  #section2 .linha a.lixos img {
+    width: 105%; /* Defina a largura desejada para a imagem */
+
+  }
+  #section2 {
+    padding: 0px; /* Adiciona um espaçamento interno para separar o texto das bordas da seção */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites da seção */
+    margin: 0;
+    height: 110vh;
+  }
+
+  .meio {
+    padding: 20px; /* Adiciona espaçamento interno ao redor do conteúdo */
+  }
+  #section2 .meio h1 {
+    font-size: 20px; /* Define um tamanho de fonte menor para o título */
+  }
+    .content{
+      padding: 10px;
+    }
+
+}
+/* Estilos para telas menores */
+@media only screen and (max-width: 960px) {
+  /* Estilização específica para telas menores */
+  #section3 .figma img {
+    max-width: 90%; /* Define a largura máxima da imagem como 100% da largura do contêiner pai */
+    height: auto; /* Garante que a altura da imagem seja ajustada automaticamente para manter a proporção */
+  }
+  #section3 {
+    height: 100vh;
+  }
+  #section3 .content1 h5 {
+    font-size: 40px; /* Define um tamanho de fonte menor para o título */
+    padding: 22px;
+  }
+
+  #section3 .content1 p {
+    font-size: 20px; /* Define um tamanho de fonte menor para o texto */
+  }
+
+}
+/* Estilos para telas menores */
+@media only screen and (max-width: 960px) {
+  /* Estilização específica para telas menores */
+  #section4 form {
+    width: 90%; /* Define a largura do formulário para ocupar 90% da largura do viewport */
+    margin: 0 auto; /* Centraliza o formulário na tela */
+    padding: 10px; /* Ajusta o preenchimento do formulário */
+    max-height: 400px; /* Define a altura máxima do formulário */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical caso o conteúdo exceda a altura máxima */
+  }
+}
+/* Estilos para telas menores */
+@media only screen and (max-width: 960px) {
+  /* Estilização específica para telas menores */
+  .mission,
+  .vision,
+  .values {
+    max-width: 300px; /* Define uma largura máxima para as seções */
+    min-width: 200px; /* Define uma largura mínima para as seções */
+  }
+}
+
+
+
+
