@@ -396,6 +396,32 @@ h1 {
   text-align: center;
   text-align: justify;
 }
+.conheca{
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+
+footer {
+  background-color: #ABE56B;
+  color: #fff;
+  position: sticky;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: -899px;
+  width: 100%;
+}
+/* nav padrão*/
+svg {
+  margin-bottom: 0;
+  width: 100%;
+  fill: #ABE56B;
+}
+
 
 h2 {
   color: #215934;

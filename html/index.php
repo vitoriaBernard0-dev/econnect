@@ -44,7 +44,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- <script src="../js/main.js"></script> -->
     <!-- <script src="../js/main.js"></script> -->
 </head>
@@ -89,7 +90,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
             <div class="meio">
-                <h1>Na junção da inovação e respeito ao meio ambiente, nossa iniciativa de coleta de eletrônicos ecoa alto, trazendo consigo a promessa de um futuro mais sustentável</h1>
+                <p class="conheca">Na junção da inovação e respeito ao meio ambiente, nossa iniciativa de coleta de
+                    eletrônicos ecoa alto, trazendo consigo a promessa de um futuro mais sustentável</p>
                 <button class="con"><a href="#section3">Conheça mais</a></button>
             </div>
 
@@ -126,21 +128,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <div class="form-group">
                         <label class="control-label col-sm-3">Nome:</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" name="nome" id="nome" value="" placeholder="Digite seu nome" required>
+                            <input type="text" class="form-control" name="nome" id="nome" value=""
+                                placeholder="Digite seu nome" required>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-3">Email:</label>
                         <div class="col-sm-9">
-                            <input type="email" class="form-control" name="email" id="email" value="" placeholder="exemplo@dominio.com" required>
+                            <input type="email" class="form-control" name="email" id="email" value=""
+                                placeholder="exemplo@dominio.com" required>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-3">Telefone:</label>
                         <div class="col-sm-9">
-                            <input type="number" class="form-control" name="telefone" id="telefone" placeholder="(00) 00000-0000" required>
+                            <input type="number" class="form-control" name="telefone" id="telefone"
+                                placeholder="(00) 00000-0000" required>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -161,7 +166,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <div class="form-group">
                         <label class="control-label col-sm-3">Mensagem:</label>
                         <div class="col-sm-9">
-                            <textarea class="form-control" id="exampleTextarea" rows="6" id="mensagem" name="mensagem" placeholder="Digite uma mensagem" required></textarea>
+                            <textarea class="form-control" id="exampleTextarea" rows="6" id="mensagem" name="mensagem"
+                                placeholder="Digite uma mensagem" required></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -229,16 +235,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         li {
             margin-bottom: 10px;
         }
+
         @media only screen and (max-width: 960px) {
             .section {
-            width: 300px;
-            height: 200px;
-            padding: 20px;
-            background-color: #abe56b;
-            border-radius: 10px;
-            margin: 10px;
+                width: 300px;
+                height: 200px;
+                padding: 20px;
+                background-color: #abe56b;
+                border-radius: 10px;
+                margin: 10px;
+            }
         }
-}
     </style>
 
 
@@ -246,11 +253,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>Sobre Nós</h1>
         <div class="section mission">
             <h2>Missão:</h2>
-            <p>Inovação para Soluções - Oferecer produtos tecnológicos inovadores e sob medida, visando proporcionar soluções eficazes.</p>
+            <p>Inovação para Soluções - Oferecer produtos tecnológicos inovadores e sob medida, visando proporcionar
+                soluções eficazes.</p>
         </div>
         <div class="section vision">
             <h2>Visão:</h2>
-            <p>Tornar-se líder global em oferecer soluções tecnológicas inovadoras e acessíveis para resolver os desafios contemporâneos.</p>
+            <p>Tornar-se líder global em oferecer soluções tecnológicas inovadoras e acessíveis para resolver os
+                desafios contemporâneos.</p>
         </div>
         <div class="section values">
             <h2>Valores:</h2>
@@ -261,14 +270,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <li><strong>SUSTENTABILIDADE:</strong></li>
             </ul>
         </div>
-        <div class=topo>
-        <button class="cta-button"><a href="#section1">Voltar para o topo</a></button>
-        </div>
-    </div>
-
+        <footer>
+            <p>&copy; 2024 Econnect. Todos os direitos reservados.</p>
+        </footer>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ABE56B" fill-opacity="1"
+                d="M0,256L48,250.7C96,245,192,235,288,224C384,213,480,203,576,192C672,181,768,171,864,176C960,181,1056,203,1152,197.3C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
 </body>
 
 </html>
+
+
+
 
 <script>
     function toggleMenu() {
