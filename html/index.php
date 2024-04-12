@@ -51,37 +51,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href=""><img src="../img/logoeconnect.png" alt=""></a>
-            </div>
-
-            <!--<div class="menu" class="menu">
-            <a href="index.php">Home</a>
-            <a href="indexiphone.php">Apple</a>
-            <a href="indexxaiomi.php">Xiaomi</a>
-            <a href="indexmotorola.php">Motorola</a>
-            <a href="indexsamsung.php">Samsung</a>
-        </div>
-        <div class="navbar">
-            <div class="hamburguer" id="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </div> -->
-        </nav>
-    </header>
-
-    <br>
-    <br>
-    <br>
     <div id="section1">
-        <div class="content">
-            <h2 class="title">ECONNECT</h2>
-            <p class="description">"Conectando tecnologia e Sustentabilidade"</p>
-            <button class="cta-button"><a href="#section2">Saiba Mais</a></button>
+        <div class="conteudo">
+            <div class="left">
+                <img class="imagem-header" src="../img/logoeconnect.png" alt="">
+            </div>
+            <div class="right">
+             
+                <p class="tec">Conectando tecnologia e Sustentabilidade</p>
+                <button class="cta-button"><a href="#section2">Saiba Mais</a></button>
+            </div>
         </div>
     </div>
 
@@ -106,16 +85,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div id="section3">
         <div class="content1">
+        <div class="esquerda">
             <h5 class="pq">Porque descartar corretamente?</h5>
+        </div>
+        <div class="direita">
+
             <p class="descricao">Conheça nossos programas de
                 recompensas para usuários que descartam eletrônicos regularmente</p>
+            <button class="cta-button"><a href="#section3-b">Mais detalhes</a></button>
+        </div>
+        </div>
 
+    </div>
+
+    <div id="section3-b">
+        <div class="content">
+            <h5 class="pq">Nossos programas de recompensa</h5>
+            <br>
             <div class="figma">
                 <a href=""><img src="../img/figma.png" alt=""></a>
             </div>
-
-
-            <button class="cta-button"><a href="#section4">Fale Conosco</a></button>
+            <button class="ctaa-button"><a href="#section4">Fale Conosco</a></button>
         </div>
     </div>
 
