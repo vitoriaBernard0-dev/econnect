@@ -103,10 +103,11 @@ main {
   font-family: 'Urbanist' !important;
 }
 .descricao{
-  font-size: 25px;
+  font-size: 45px;
   margin-top: 0; 
   margin-bottom: 20px; 
   color: white;
+  margin-left: 300px;
 }
 .tec{
   font-size: 45px;
@@ -140,6 +141,31 @@ main {
   border-radius: 30px; /* Bordas arredondadas */
   transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
 }
+.mais{
+  padding: 20px 40px; /* Maior espaço ao redor do botão */
+  font-size: 20px; /* Tamanho maior para o texto do botão */
+  background-color: white;
+  color: #215934; /* Altera a cor do texto para verde */
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 30px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease;
+  margin-left: 280px;
+}
+.enviar{
+  padding: 20px 40px; /* Maior espaço ao redor do botão */
+  font-size: 20px; /* Tamanho maior para o texto do botão */
+  background-color: white;
+  color: #215934; /* Altera a cor do texto para verde */
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 30px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease;
+  margin-left: 340px;
+  
+}
 .ctaa-button {
   padding: 20px 40px; /* Maior espaço ao redor do botão */
   font-size: 20px; /* Tamanho maior para o texto do botão */
@@ -158,7 +184,7 @@ main {
 .sobreb {
   padding: 20px 40px; /* Maior espaço ao redor do botão */
   font-size: 20px; /* Tamanho maior para o texto do botão */
-  background-color: white;
+  background-color: #ABE56B;
   color: #215934; /* Altera a cor do texto para verde */
   border: none;
   cursor: pointer;
@@ -182,9 +208,11 @@ main {
 
 .right {
   margin: auto;
+  margin-left: 50px;
 }
-:left{
+.left{
   margin: auto;
+  margin-left: 80px;
 }
 
 .imagem-header {

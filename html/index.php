@@ -57,9 +57,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <img class="imagem-header" src="../img/logoeconnect.png" alt="">
             </div>
             <div class="right">
-             
                 <p class="tec">Conectando tecnologia e Sustentabilidade</p>
-                <button class="cta-button"><a href="#section2">Saiba Mais</a></button>
+                <center><button class="cta-button"><a href="#section2">Saiba Mais</a></button></center>
             </div>
         </div>
     </div>
@@ -84,16 +83,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     <div id="section3">
-        <div class="content1">
-        <div class="esquerda">
-            <h5 class="pq">Porque descartar corretamente?</h5>
-        </div>
-        <div class="direita">
-
-            <p class="descricao">Conheça nossos programas de
-                recompensas para usuários que descartam eletrônicos regularmente</p>
-            <button class="cta-button"><a href="#section3-b">Mais detalhes</a></button>
-        </div>
+        <div class="conteudo">
+            <div class="left">
+                <h5 class="pq">Porque descartar corretamente?</h5>
+            </div>
+            <div class="right">
+              <p class="descricao">Conheça nossos programas de
+                    recompensas para usuários que descartam eletrônicos regularmente</p>
+                <center><button class="mais"><a href="#section3-b">Mais detalhes</a></button></center>
+            </div>
         </div>
 
     </div>
@@ -163,7 +161,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <div class="form-group">
                         <div class="col-md-12 text-right">
-                            <input class=" cta-button" id="submit" name="btnSend" type="submit" value="Enviar">
+                            <input class="enviar" id="submit" name="btnSend" type="submit" value="Enviar">
                             <a name="formulario"></a>
                             <!-- <button class="cta-button"><a href="#section1">Enviar</a></button> -->
                         </div>
