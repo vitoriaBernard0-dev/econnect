@@ -24,15 +24,19 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-}footer {
+}
+
+footer {
   background-color: #215934; 
   padding: 20px;
   text-align: center;
 }
+
 .content {
   align-items: center;
   padding: 30px;
 }
+
 .button {
   background-color: #808080; /* Cinza */
   border: none;
@@ -563,6 +567,38 @@ p {
   height: auto; /* Mantém a proporção da imagem */
   display: block; /* Remove espaços em branco extras abaixo da imagem */
 }
+
+#section5 {
+  position: relative; /* Adiciona posição relativa para que a imagem possa ser posicionada corretamente */
+}
+
+.image-placeholder {
+  width: 98%; /* Largura total da section5 */
+  height: 98%; /* Altura total da section5 */
+  background-color: #abe56b; /* Cor de fundo para o espaço reservado */
+  border-radius: 10px;
+  margin: 10px;
+  overflow: hidden; /* Esconde qualquer conteúdo que transbordar do espaço reservado */
+  position: relative; /* Adiciona posição relativa para que a imagem possa ser posicionada corretamente */
+}
+
+.image-placeholder img {
+  width: 100%; /* Para que a imagem ocupe toda a largura do espaço reservado */
+  height: 100%; /* Para que a imagem ocupe toda a altura do espaço reservado */
+  object-fit: cover; /* Para manter a proporção da imagem e cobrir todo o espaço */
+}
+
+/* .footer {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+} */
+
 /* Estilos para telas menores */
 @media only screen and (max-width: 960px) {
   /* Estilização específica para telas menores */

@@ -177,101 +177,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+    
+</style>
 
-        h1 {
-            text-align: center;
-            font-family: 'Verdana', sans-serif;
-        }
-
-        #section5 {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-
-        .section {
-            width: 300px;
-            height: 300px;
-            padding: 20px;
-            background-color: #abe56b;
-            border-radius: 10px;
-            margin: 10px;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        p,
-        ul {
-            color: #666;
-            font-family: 'Tahoma', sans-serif;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        @media only screen and (max-width: 960px) {
-            .section {
-                width: 300px;
-                height: 200px;
-                padding: 20px;
-                background-color: #abe56b;
-                border-radius: 10px;
-                margin: 10px;
-            }
-        }
-    </style>
-
-
-    <div id="section5">
-        <h1>Sobre Nós</h1>
-        <div class="section mission">
-            <h2>Missão:</h2>
-            <p>Inovação para Soluções - Oferecer produtos tecnológicos inovadores e sob medida, visando proporcionar
-                soluções eficazes.</p>
-        </div>
-        <div class="section vision">
-            <h2>Visão:</h2>
-            <p>Tornar-se líder global em oferecer soluções tecnológicas inovadoras e acessíveis para resolver os
-                desafios contemporâneos.</p>
-        </div>
-        <div class="section values">
-            <h2>Valores:</h2>
-            <ul>
-                <li><strong>INOVAÇÃO:</strong></li>
-                <li><strong>CONFIANÇA:</strong></li>
-                <li><strong>EMPATIA:</strong></li>
-                <li><strong>SUSTENTABILIDADE:</strong></li>
-            </ul>
-        </div>
-        <footer>
-            <p>&copy; 2024 Econnect. Todos os direitos reservados.</p>
-        </footer>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ABE56B" fill-opacity="1"
-                d="M0,256L48,250.7C96,245,192,235,288,224C384,213,480,203,576,192C672,181,768,171,864,176C960,181,1056,203,1152,197.3C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-            </path>
-        </svg>
-</body>
-
-</html>
-
-
-
+<div id="section5">
+    <div class="image-placeholder">
+        <img src="../img/sobrenos.png" alt="Imagem sobre nós">
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Econnect. Todos os direitos reservados.</p>
+    </footer>
+</div>
 
 <script>
     function toggleMenu() {
